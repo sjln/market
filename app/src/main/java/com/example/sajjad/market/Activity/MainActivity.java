@@ -30,6 +30,8 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 public class MainActivity extends AppCompatActivity {
+        
+        // ziad dari goh mikhori :D
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
