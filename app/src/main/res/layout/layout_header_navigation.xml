@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/navigation_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    xmlns:myApplication="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/standard_margin"
+    android:paddingTop="@dimen/standard_margin">
+    <ImageView
+        android:id="@+id/login_pic_navigation_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/standard_margin"
+        android:src="@drawable/login_register_vector"/>
+
+    <TextView
+        android:id="@+id/login_navigation_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/standard_text_size_x1.5"
+        android:layout_marginStart="8dp"
+        android:text="@string/navigation_header_login_register"
+        myApplication:layout_constraintEnd_toEndOf="parent"
+        myApplication:layout_constraintStart_toStartOf="parent"
+        myApplication:layout_constraintTop_toBottomOf="@id/login_pic_navigation_header" />
+
+</android.support.constraint.ConstraintLayout>

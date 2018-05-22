@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:myApplication="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <!--<item-->
+            <!--android:id="@+id/navigation_menu_home"-->
+            <!--android:icon="@drawable/ic_home"-->
+            <!--android:title="@string/main_page" />-->
+        <item
+            android:id="@+id/navigation_menu_category"
+            android:icon="@drawable/ic_category"
+            android:title="@string/category" />
+    </group>
+    <group>
+
+        <item
+            android:id="@+id/navigation_menu_shopping_cart"
+            android:icon="@drawable/shopping_cart"
+            android:title="@string/shopping_cart" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/navigation_menu_most_sales"
+            android:title="@string/most_sales" />
+        <item
+            android:id="@+id/navigation_menu_most_seen"
+            android:title="@string/most_seen" />
+        <item
+            android:id="@+id/navigation_menu_newests"
+            android:title="@string/newests" />
+    </group>
+        <item
+            android:id="@+id/navigation_menu_about_us"
+            android:title="@string/about_us" />
+
+
+</menu>

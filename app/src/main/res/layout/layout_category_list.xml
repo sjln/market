@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:myApplication="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/category_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="موبایل"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin_x2"
+        android:paddingBottom="@dimen/standard_margin_x2"
+        android:textSize="@dimen/standard_text_size_x1.5"/>
+
+    <ImageView
+        android:id="@+id/category_list_image"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/category_list_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/category_list_name"
+        android:scaleType="fitStart"
+        tools:src="@drawable/product_sample_pic" />
+</RelativeLayout>

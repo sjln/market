@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myApplication="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sajjad.market.Activity.CategoryListActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_category_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_category_fragment"
+            android:layoutDirection="rtl"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            myApplication:layout_scrollFlags="scroll|enterAlways"
+            myApplication:title="@string/category"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:background="@color/background_main_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        myApplication:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:background="@android:color/holo_green_light"
+        android:id="@+id/category_list_tab_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        myApplication:tabGravity="fill"
+        myApplication:tabMode="scrollable" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/category_list_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/category_list_tab_layout"/>
+            </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
