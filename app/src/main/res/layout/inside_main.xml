@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ss.bottomnavigation.BottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_notice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_shopping_basket_black_24dp"
+            app:tab_text="آگهی ها" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/vc_add_box"
+            app:tab_text="افزودن" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_categorize"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/vc_format_list_bulleted"
+            app:tab_text="دسته بندی" />
+
+        <com.ss.bottomnavigation.TabItem
+            android:id="@+id/tab_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tab_icon="@drawable/ic_account_box"
+            app:tab_text="پروفایل" />
+
+    </com.ss.bottomnavigation.BottomNavigation>
+
+
+
+        <FrameLayout
+            android:id="@+id/frame_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

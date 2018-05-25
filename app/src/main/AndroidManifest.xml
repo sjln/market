@@ -13,23 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activity.MainActivity">
+        </activity>
+        <activity
+            android:name=".Activity.LoginRegisterActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"></activity>
+        <activity android:name=".Activity.CategoryListActivity"></activity>
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"></activity>
+        <activity android:name=".Activity.WebViewActivity"></activity>
+
+        <activity android:name=".Activity.BasicMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".Activity.LoginRegisterActivity"
-            android:windowSoftInputMode="stateAlwaysVisible">
-        </activity>
-        <activity android:name=".Activity.CategoryListActivity">
-        </activity>
-        <activity
-            android:name=".Activity.SearchActivity"
-            android:windowSoftInputMode="stateAlwaysVisible">
-        </activity>
-        <activity android:name=".Activity.WebViewActivity">
         </activity>
     </application>
 
