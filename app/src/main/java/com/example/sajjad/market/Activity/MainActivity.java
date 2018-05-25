@@ -23,6 +23,10 @@ import com.example.sajjad.market.adapter.CategoryMainPageAdapter;
 import com.example.sajjad.market.adapter.ProductMainPageAdapter;
 import com.example.sajjad.market.fake_generator.DataFakeGenerator;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import ss.com.bannerslider.banners.Banner;
 import ss.com.bannerslider.
         banners.DrawableBanner;
 import ss.com.bannerslider.views.BannerSlider;
@@ -68,10 +72,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupBannerSlider() {
         BannerSlider bannerSlider = findViewById(R.id.banner_slider_main_page);
-        bannerSlider.addBanner(new DrawableBanner(R.drawable.banner_1));
-        bannerSlider.addBanner(new DrawableBanner(R.drawable.banner_2));
-        bannerSlider.addBanner(new DrawableBanner(R.drawable.banner_3));
-        bannerSlider.addBanner(new DrawableBanner(R.drawable.banner_4));
+        List<Banner> banners = new ArrayList<>();
+        banners.add(new DrawableBanner(R.drawable.banner_1));
+        banners.add(new DrawableBanner(R.drawable.banner_2));
+        banners.add(new DrawableBanner(R.drawable.banner_3));
+        banners.add(new DrawableBanner(R.drawable.banner_4));
+        bannerSlider.setBanners(banners);
 
     }
 
