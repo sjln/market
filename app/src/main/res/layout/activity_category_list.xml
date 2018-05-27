@@ -33,7 +33,8 @@
             android:layout_height="match_parent">
 
     <android.support.design.widget.TabLayout
-        android:background="@android:color/holo_green_light"
+        myApplication:tabTextAppearance="@style/TabText"
+        android:background="@color/background_view_pager_category_list"
         android:id="@+id/category_list_tab_layout"
         android:layout_alignParentEnd="true"
         android:layout_width="match_parent"

@@ -58,10 +58,10 @@ public class DataFakeGenerator {
         List<ProductMainPage> products = new ArrayList<>();
         String moneyUnit = " تومان";
 
+        ProductMainPage product = new ProductMainPage();
+        product.setProductImage(ResourcesCompat.getDrawable(context.getResources(), R.drawable.horse_newest_sample_image,null));
         for (int i = 1; i <= 8; i++) {
-            ProductMainPage product = new ProductMainPage();
             product.setId(i);
-            product.setProductImage(ResourcesCompat.getDrawable(context.getResources(), R.drawable.product_sample_pic,null));
             switch (i){
                 case 1:
                     product.setContent("1 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاد" +

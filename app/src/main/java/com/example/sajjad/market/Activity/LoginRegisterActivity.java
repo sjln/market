@@ -46,8 +46,8 @@ public class LoginRegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_register);
-        
         Toolbar toolbar = findViewById(R.id.login_register_activity_toolbar);
+        toolbar.setTitleTextColor(0xFFFFFFFF);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -72,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
     private void setupBannerSlider() {
         BannerSlider bannerSlider = findViewById(R.id.banner_slider_main_page);
         List<Banner> banners = new ArrayList<>();
-        banners.add(new DrawableBanner(R.drawable.banner_1));
-        banners.add(new DrawableBanner(R.drawable.banner_2));
-        banners.add(new DrawableBanner(R.drawable.banner_3));
-        banners.add(new DrawableBanner(R.drawable.banner_4));
+        banners.add(new DrawableBanner(R.drawable.banner1));
+        banners.add(new DrawableBanner(R.drawable.banner2));
+        banners.add(new DrawableBanner(R.drawable.banner3));
+////        banners.add(new DrawableBanner(R.drawable.banner_4));
         bannerSlider.setBanners(banners);
 
     }
@@ -103,8 +104,11 @@ public class MainActivity extends AppCompatActivity {
         newestsRecyclerView.setAdapter(newestsAdapter);
     }
 
+
+
     private void setupNavigationView() {
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitleTextColor(0xFFFFFFFF);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
@@ -146,6 +150,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+    @Override
+    public void onBackPressed() {
+        final DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else {
+        super.onBackPressed();
+    }
     }
 
 }

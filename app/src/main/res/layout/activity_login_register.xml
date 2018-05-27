@@ -62,26 +62,6 @@
                 android:text="@string/password_login"
                 android:textSize="@dimen/standard_text_size" />
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/kolll"
-                myApplication:passwordToggleEnabled="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <EditText
-                    android:id="@+id/darrrr"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:ems="10"
-                    android:imeOptions="actionNext"
-                    android:background="@drawable/login_form_frame"
-                    android:inputType="textPassword"
-                    android:hint="dfsdfsfsd flkg jdfljk gfkljg d jfk fkg /n fkd n/ fgd" />
-
-            </android.support.design.widget.TextInputLayout>
-
             <EditText
                 android:id="@+id/password_edit_text"
                 android:layout_width="match_parent"
@@ -132,24 +112,6 @@
                 android:layout_marginTop="@dimen/standard_margin_x4"
                 android:text="@string/register"
                 android:textSize="@dimen/standard_text_size_x1.5" />
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/username_text_input_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="lfdk;jkf gkjdfgfk "/>
-
-                <EditText
-                    android:id="@+id/etUsername"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Username" />
-
-            </android.support.design.widget.TextInputLayout>
 
 
         </LinearLayout>

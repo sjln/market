@@ -18,7 +18,7 @@
         android:id="@+id/product_pic"
         android:layout_width="match_parent"
         android:layout_height="@dimen/image_product_height"
-        tools:src="@drawable/product_sample_pic"/>
+        tools:src="@drawable/horse_newest_sample_image"/>
 
     <TextView
         android:id="@+id/content_product_main_page"

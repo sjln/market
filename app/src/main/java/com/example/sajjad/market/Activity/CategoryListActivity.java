@@ -28,6 +28,7 @@ public class CategoryListActivity extends AppCompatActivity {
         categoryListTabLayout.setupWithViewPager(categoryListViewPager);
         categoryListViewPager.setCurrentItem(9);
         Toolbar toolbarCategoryFragment = findViewById(R.id.toolbar_category_fragment);
+        toolbarCategoryFragment.setTitleTextColor(0xFFFFFFFF);
         setSupportActionBar(toolbarCategoryFragment);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);

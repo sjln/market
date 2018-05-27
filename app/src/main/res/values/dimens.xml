@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--<dimen name="standard_margin">@dimen/_8sdp</dimen>-->
+    <!--<dimen name="standard_margin_x2">@dimen/_16sdp</dimen>-->
+    <!--<dimen name="standard_margin_x4">@dimen/_32sdp</dimen>-->
+    <!--<dimen name="standard_margin_x8">@dimen/_64sdp</dimen>-->
+    <!--<dimen name="standard_views_radius">@dimen/_12sdp</dimen>-->
+    <!--<integer name="max_line_products_main_page">2</integer>-->
+    <!--<dimen name="standard_text_size">@dimen/_18ssp</dimen>-->
+    <!--<dimen name="standard_text_size_x1.5">@dimen/_27ssp</dimen>-->
+    <!--<dimen name="tab_text_size">@dimen/_20ssp</dimen>-->
+    <!--<dimen name="fab_margin">@dimen/_16ssp</dimen>-->
+    <!--<dimen name="form_margin">@dimen/_60sdp</dimen>-->
+    <!--<dimen name="form_margin_x2">@dimen/_120sdp</dimen>-->
+    <!--<dimen name="form_width">@dimen/_1sdp</dimen>-->
+    <!--<dimen name="banner_height">@dimen/_180sdp</dimen>-->
+    <!--<dimen name="corner_card_view_default_radius">@dimen/_4sdp</dimen>-->
+    <!--<dimen name="layout_products_width">@dimen/_170sdp</dimen>-->
+    <!--<dimen name="image_product_height">@dimen/_220sdp</dimen>-->
+    <!--&lt;!&ndash; Default screen margins, per the Android Design guidelines. &ndash;&gt;-->
+    <!--<dimen name="activity_horizontal_margin">@dimen/_16sdp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">@dimen/_16sdp</dimen>-->
+    <!--<dimen name="appbar_padding_top">@dimen/_8sdp</dimen>-->
+    <!--<dimen name="standard_card_radios">@dimen/_6sdp</dimen>-->
+    <!--<dimen name="standard_card_elevation">@dimen/_2sdp</dimen>-->
+    <!--<dimen name="standard_size_title">@dimen/_18ssp</dimen>-->
+    <!--<dimen name="standard_size_content">@dimen/_16ssp</dimen>-->
+    <!--<dimen name="standard_edit_text">@dimen/_32sdp</dimen>-->
+
+
     <dimen name="standard_margin">8dp</dimen>
     <dimen name="standard_margin_x2">16dp</dimen>
     <dimen name="standard_margin_x4">32dp</dimen>
